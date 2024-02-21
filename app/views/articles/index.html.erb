@@ -1,0 +1,8 @@
+<h1 class="mb-5">Articles</h1>
+
+<% @articles.each do |article| %>
+  <%= render article %>
+  <p><%= link_to "Show this article", article, class: "btn btn-sm btn-outline-dark mt-3" %></p>
+<% end %>
+
+<%= link_to "New article", new_article_path, class: "btn btn-sm btn-outline-dark" %>

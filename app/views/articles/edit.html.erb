@@ -1,0 +1,9 @@
+<h1 class="mb-5">Editing article</h1>
+
+<%= render "form", article: @article %>
+
+<br>
+<div class="btn-group my-5">
+  <%= link_to "Show this article", @article, class: "btn btn-sm btn-outline-dark" %>
+  <%= link_to "Back to articles", articles_path, class: "btn btn-sm btn-outline-dark" %>
+</div>

@@ -1,0 +1,7 @@
+<%= render @article %>
+
+<div class="btn-group my-5">
+  <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-sm btn-outline-dark" %>
+  <%= link_to "Back to articles", articles_path, class: "btn btn-sm btn-outline-dark" %>
+  <%= button_to "Destroy this article", @article, method: :delete, class: "btn btn-sm btn-outline-dark" %>
+</div>
